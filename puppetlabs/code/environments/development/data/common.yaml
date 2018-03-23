@@ -1,7 +1,11 @@
 ---
 message: "This node is using common data"
-loris::image_cache: '/content/dev/cache'
-loris::info_cache: '/content/dev/cache'
-loris::source_images: '/content/dev/images'
-puppetcron::environment: 'production'
-puppetcron::ensure: 'present'
+archivesspace_devenv::install_dir: '/opt/archivesspace'
+archivesspace_devenv::revision: 'master'
+archivesspace_devenv::source: 'https://github.com/archivesspace/archivesspace.git'
+archivesspace_devenv::user: 'vagrant'
+archivesspace_devenv::mysql_asdb_passwd: 'aspace'
+archivesspace_devenv::asdb_name: 'asdb'
+archivesspace_devenv::asdb_passwd: 'aspace'
+archivesspace_devenv::asdb_user: 'asdb'
+archivesspace_devenv::root_passwd: 'vagrant'
